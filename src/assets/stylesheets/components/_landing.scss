@@ -1,0 +1,25 @@
+.landing {
+    height: 90%;
+
+    .landing-top {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .landing-bottom {
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        // align-items: top;
+
+        p {
+            font-size: 30px;
+        }
+    }
+}
