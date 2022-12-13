@@ -1,5 +1,5 @@
 import { Route, Switch} from "react-router-dom";
-import PollsIndexContainer from "./components/polls/polls_index_container";
+import PollsIndex from "./components/polls/polls_index";
 import PollShowContainer from './components/polls/polls_show_container'
 import Landing from "./components/landing/landing";
 // import { PrivateRoutes, AuthRoute} from "./utils/session/protectedRoutes";
@@ -20,7 +20,7 @@ function App() {
       <Switch>
         <AuthRoute exact path="/login" component={SignIn} />
         <AuthRoute exact path="/signup" component={SignUp} />
-        <Route exact path="/polls" component={PollsIndexContainer} />
+        <Route exact path="/polls" component={PollsIndex} />
         <Route exact path="/polls/:poll_id" component={PollShowContainer} />
         {/* <Route element={<PrivateRoutes/>}>
           <Route path='/dashboard' element={<Dashboard/>} />

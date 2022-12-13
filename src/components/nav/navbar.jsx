@@ -12,7 +12,7 @@ const NavBar = () => {
         if (isAuthenticated) {
             return (
               <div className="right-side-nav">
-                <Link to="/polls">Browse Polls</Link>
+                <Link to="/polls">My Polls</Link>
                 <Link to="/dashboard">Dashboard</Link>
                 <div className='nav-logout'>
                     <button onClick={() => dispatch(logout())}>Logout</button>
@@ -32,7 +32,7 @@ const NavBar = () => {
     return (
         <div className='nav'>
             <div className='left-side-nav'>
-                <Link to={"/polls"}>HelloPolls</Link>
+                <Link to={"/"}>HelloPolls</Link>
             </div>
                 {links()}
         </div>

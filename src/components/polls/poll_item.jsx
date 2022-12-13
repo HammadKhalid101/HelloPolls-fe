@@ -1,10 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-const PollItem = () => {
+const PollItem = ({ poll }) => {
+
   return (
-    <div>
-        Hello From Poll Item
+    <div className="poll-item">
+      <NavLink to={`/polls/${poll.id}`}>
+        <h1>{poll.topic}</h1>
+      </NavLink>
+      <p>Poll topic: {poll.topic}</p>
     </div>
   );
 };
